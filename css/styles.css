@@ -1,0 +1,307 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(5, 5, 5);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ddd;
+
+}
+
+.nombre-empresa {
+    display: flex;
+    min-height: 20px;
+    background-color: #333;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button a:hover {
+    color: red;
+}
+
+nav a {
+    align-items: center;
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #ddd;
+}
+
+nav a:hover {
+    color: red;
+}
+
+@media (max-width:500px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+/* The dropdown container */
+.dropdown {
+    float: right;
+    overflow: hidden;
+    padding-right: 100px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-image {
+    position: relative;
+    background: url("../imagenes/even.jpg") no-repeat center;
+    background-size: cover;
+    height: 500px;
+    width: auto;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.container h1 {
+    margin: 0;
+    font-size: 70px;
+}
+
+.container h1 span {
+    border: 6px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.cen {
+    margin: 20px;
+    display: block;
+    font-size: 26px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    grid-template-columns: 50% 50%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.container-fluid .column {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px;
+    gap: 1em;
+    row-gap: 1em;
+}
+
+.grid .div {
+    padding: 1em;
+}
+
+.texto {
+    text-align: justify !important;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.imagen1 {
+    margin-left: 150px;
+    display: block;
+    width: 350px;
+    height: 300px;
+}
+
+.imagen {
+    margin: auto 150px;
+    display: block;
+    width: 600px;
+    height: 550px;
+}
+
+
+.image {
+    display: block;
+    width: 550px;
+    height: 500px;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.icon {
+    color: white;
+    font-size: 100px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.fa-user:hover {
+    color: #eee;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    margin-top: 0%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    margin-top: 5%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.card {
+    margin-left: 20%;
+    position: relative;
+}
+
+#saludos {
+    position: relative;
+    align-items: center !important;
+}
+
+.esp {
+    margin: 20%;
+}
